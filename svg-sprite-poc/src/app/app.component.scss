@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  margin: 0 auto;
+  padding: 25px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background: #fefefe;
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  label {
+    margin-top: 20px;
+  }
+
+  input {
+    background: #ececec;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  .svg-container {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}

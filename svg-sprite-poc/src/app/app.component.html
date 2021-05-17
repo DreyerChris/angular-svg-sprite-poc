@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Angular SVG sprite POC</h1>
+  <h3>Play around with the options and see the SVG change in real time</h3>
+  <label for="iconName">Icon name</label>
+  <input name="iconName" [(ngModel)]="iconName"/>
+  <label for="size">Size</label>
+  <input name="size" [(ngModel)]="size"/>
+  <label for="color">Color</label>
+  <input name="color" [(ngModel)]="color"/>
+
+  <div class="svg-container">
+    <app-svg-icon [icon]="'icon-' + iconName" [style.height]="size" [style.width]="size" [style.fill]="color"></app-svg-icon>
+  </div>
+</div>
