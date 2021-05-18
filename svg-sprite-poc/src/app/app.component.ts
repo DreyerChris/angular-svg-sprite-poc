@@ -10,4 +10,9 @@ export class AppComponent {
   iconName: string = 'notification';
   size: string = '50px';
   color: string = 'black';
+  iconCount: number = 10;
+
+  iconCountArray(): any[]{
+    return Array(this.iconCount).map((x, i) => i);
+  }
 }

@@ -7,8 +7,10 @@
   <input name="size" [(ngModel)]="size"/>
   <label for="color">Color</label>
   <input name="color" [(ngModel)]="color"/>
+  <label for="iconCount">Number of icons</label>
+  <input name="iconCount" type="number" [(ngModel)]="iconCount"/>
 
   <div class="svg-container">
-    <app-svg-icon [icon]="'icon-' + iconName" [style.height]="size" [style.width]="size" [style.fill]="color"></app-svg-icon>
+    <app-svg-icon *ngFor="let i of iconCountArray()" [icon]="'icon-' + iconName" [style.height]="size" [style.width]="size" [style.fill]="color"></app-svg-icon>
   </div>
 </div>
